@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Data Table</title>
+</head>
+<body>
+    <div class="container">
+   <h2 class="mt-4 ml-5 pb-2">Company Management</h2> 
+   <input type="text" id="myInput" onkeyup="searchfun()" placeholder="Search for names.." 
+   title="Type in a name">
+</div>
+<div class="container table-responsive">
+    <table id="myTable">
+        <tr class="header">
+          <th>Company Name</th>
+          <th>Company Website</th>
+          <th>Contact Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>OSCOD</td>
+          <td>OSCOD.com</td>
+          <td>Robin Box</td>
+          <td><a href="#">info@oscod.com</a></td>
+          <td>8885550185</td>
+          <td><button type="button" class="btn btn-outline-primary">
+            <i class="fa fa-edit"></i>
+          </button></td>
+        </tr>
+        <tr>
+            <td>E2M</td>
+            <td>E2M.com</td>
+            <td>Sara Synder</td>
+            <td><a href="#">career@e2msolutions.com</a></td>
+            <td>8885550162</td>
+            <td><button type="button" class="btn btn-outline-danger">
+                <i class="fa fa-trash"></i>
+            </button></td>
+        </tr>
+        <tr>
+          <td>Agile Infoways</td>
+          <td>Agileinfo.in</td>
+          <td>Patric Graham</td>
+            <td><a href="#">inquiry@agileinfo.com</a></td>
+            <td>8885550199</td>
+            <td><button type="button" class="btn btn-outline-primary">
+                <i class="fa fa-edit"></i>
+            </button></td>
+        </tr>
+        <tr>
+          <td>Infigic Tech</td>
+          <td>Infigictech.in</td>
+          <td>Diane Watson</td>
+            <td><a href="#">info@infigic.com</a></td>
+            <td>8885550198</td>
+            <td><button type="button" class="btn btn-outline-danger">
+                <i class="fa fa-trash"></i>
+            </button></td>
+        </tr>
+        <tr>
+          <td>TOPS Technology</td>
+          <td>Topstec.com</td>
+          <td>Kivel Gill</td>
+            <td><a href="#">hr@tops-int.com</a></td>
+            <td>8885550124</td>
+            <td>
+                <button type="button" class="btn btn-outline-success">
+                    <i class="fa fa-eye"></i>
+                </button>
+            </td>
+        </tr>
+        <tr>
+          <td>Zigsaw</td>
+          <td>zingsaw.com</td>
+          <td>Andrew Fernandes</td>
+            <td><a href="#">srivastava@zigsaw.in</a></td>
+            <td>8885550100</td>
+            <td>
+                <button type="button" class="btn btn-outline-success">
+                    <i class="fa fa-eye"></i>
+                </button>
+            </td>
+        </tr>
+        <tr>
+          <td>Asite</td>
+          <td>Asite.net</td>
+          <td>Wren Box</td>
+            <td><a href="#">careers@asite.com.</a></td>
+            <td>9955690359</td>
+            <td>
+                <button type="button" class="btn btn-outline-danger">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </td>
+        </tr>
+        <tr>
+          <td>Elsner</td>
+          <td>Elsner.com</td>
+          <td>Alfreds Futterkiste</td>
+            <td><a href="#">career@elsner.com </a></td>
+            <td>7789433245</td>
+            <td>
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="fa fa-edit"></i>
+                </button>
+            </td>
+        </tr>
+      </table>
+</div>
+</body>
+</html>
